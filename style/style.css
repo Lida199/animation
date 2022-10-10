@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.background {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+#sea {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#sun {
+    position: absolute;
+    top: 20px;
+    width: 180px;
+    height: 180px;
+    left: 50px;
+    animation: sun 20s infinite linear;
+}
+#cloud {
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    height: 130px;
+    right: 50px;
+    animation: cloud 10s 1 linear alternate-reverse;
+}
+#cloud2 {
+    position: absolute;
+    top: 50px;
+    width: 140px;
+    height: 80px;
+    right: 150px;
+    animation: cloud2 10s 1 linear alternate-reverse;
+}
+#seaweed {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    right: 50px;
+}
+
+#seaweed2 {
+    position: absolute;
+    bottom: 15px;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+}
+#seaweed3 {
+    position: absolute;
+    bottom: 5px;
+    width: 175px;
+    height: 175px;
+    left: 350px;
+}
+#fish {
+    height: 250px;
+    width: 300px;
+    rotate: -15deg;
+    position: absolute;
+    right: 220px;
+    bottom: 10px;
+    animation: fish 5s 1 linear;
+}
+#bubbles {
+    width: 105px;
+    height: 145px;
+    position:absolute;
+    bottom: 10px;
+    opacity: 0;
+    left: 250px;
+    animation: bubble 15s 1 linear;
+}
+
+#shark {
+    position: absolute;
+    bottom: 280px;
+    left: 800px;
+    animation: shark 20s 1 linear;
+}
+
+@keyframes sun {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cloud {
+    from {
+        right: 50px
+    }
+    to {
+        right: 550px;
+    }
+}
+
+@keyframes cloud2 {
+    from {
+        right: 150px;
+    }
+    to {
+        right: 650px;
+    }
+}
+
+@keyframes fish {
+    from{
+        right: 20px;
+        bottom: 150px;
+    }
+    to {
+        right: 220px;
+        bottom: 10px;
+        rotate: -15deg;
+    }
+}
+@keyframes bubble {
+    from {
+        opacity: 100%;
+    }
+    to {
+        bottom: 360px;
+        opacity: 100%;
+    }
+}
+@keyframes shark {
+    from {
+        left: 0;
+    }
+    to{
+        left: 800px;
+    }
+}
+
+
+
